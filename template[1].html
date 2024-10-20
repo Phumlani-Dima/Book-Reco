@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookReco - Your Personal Book Recommendation Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .book {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BookReco</h1>
+        <p>Your Personal Book Recommendation Engine</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Welcome to BookReco</h2>
+        <p>Discover your next favorite book with our AI-powered recommendation system!</p>
+        <a href="#recommendations">Get Started</a>
+    </div>
+
+    <div class="container" id="recommendations">
+        <h2>Your Personalized Recommendations</h2>
+        <div class="book-list">
+            <div class="book">
+                <img src="macbeth.jpeg" alt="Book 1">
+                <h3>Macbeth</h3>
+                <p>Author: William Shakespeare</p>
+                <p>Genre: Tragedy</p>
+                <a href="https://en.wikipedia.org/wiki/Macbeth">Learn More</a>
+            </div>
+            <div class="book">
+                <img src="richdadpoordad.jpeg" alt="Book 2">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Author: Robert T. Kiyosaki and Sharon Lechter</p>
+                <p>Genre: Non-Fiction</p>
+                <a href="https://en.wikipedia.org/wiki/Romeo_and_Juliet">Learn More</a>
+            </div>
+            <div class="book">
+                <img src="romeo&juliet.jpeg" alt="Book 3">
+                <h3>Romeo and Juliet</h3>
+                <p>Author: William Shakespeare</p>
+                <p>Genre: Tragedy</p>
+                <a href="https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="profile">
+        <h2>Your Profile</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="favorite-genre">Favorite Genre:</label>
+            <select id="favorite-genre" name="favorite-genre">
+                <option value="fiction">Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="non-fiction">Non-Fiction</option>
+            </select><br><br>
+            
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BookReco. All rights reserved.</p>
+    </footer>
+</body>
+</html>
